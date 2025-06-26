@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <h1>Name</h1>
+    <input type="text" id="name">
+    <h1>mobile</h1>
+    <input type="number" id="mobile">
+    <h1>Society/Firm name</h1>
+    <input type="text" id="firm">
+    <h1>VILLAGE NAME</h1>
+    <input type="text" id="VILLAGE">
+    <p>POWER DAN</p><input type="number" id="pwd">
+    <P>SUPER DAN</P><input type="number" id="srd">
+    <P>BUFFALO DAN</P><input type="number" id="bfd">
+
+    <button onclick="bill()">submit</button>
+
+    </form>
+    <script type="text/javascript">
+    function bill()
+     {
+       var name = document.getElementById("name").value;
+       var mobile = document.getElementById("mobile").value;
+       var firm = document.getElementById("firm").value;
+       var village = document.getElementById("VILLAGE").value;
+       var PowerDanOrder = document.getElementById("pwd").value;
+       var SuperDanOrder = document.getElementById("srd").value;
+       var BuffuloDanOrder = document.getElementById("bfd").value;
+
+
+       PowerAmt = PowerDanOrder*1440;
+       SuperAmt = SuperDanOrder*1470;
+       BuffaloAmt = BuffuloDanOrder*1610;
+       total = PowerAmt + SuperAmt + BuffaloAmt ;
+
+
+       document.write(name)
+       document.write(mobile)
+       document.write(firm)
+       document.write(village)
+       document.write(PowerAmt)
+       document.write(PowerAmt)
+       document.write(BuffaloAmt)
+       document.write(SuperAmt)
+       document.write(total)
+
+
+       document.getElementById("NAME :" + name).innerHTML;
+       document.getElementById("MOBILE NO." + mobile).innerHTML;
+       document.getElementById("VILLAGE NAME :" + village).innerHTML;
+       document.getElementById("FIRM NAME :" + firm).innerHTML;
+       document.getElementById("POWER DAN ORDER :" + PowerAmt).innerHTML;
+       document.getElementById("SUPER DAN ORDER :" + SuperAmt).innerHTML;
+       document.getElementById("BUFFALO DAN ORDER :" + BuffaloAmt).innerHTML;
+       document.getElementById("TOTAL AMOUNT :" + total).innerHTML;
+     }
+    </script>
+    </body>
+
+</html>

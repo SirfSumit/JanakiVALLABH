@@ -1,0 +1,226 @@
+
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Navigation Design */
+header {
+  background-color: #222;
+  padding: 1rem 2rem;
+  color: white;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+
+  align-items: center;
+}
+
+nav h4 {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+nav li {
+  display: inline;
+  margin-left: 20px;
+  color: white;
+  cursor: pointer;
+  list-style: none;
+}
+
+/* Banner Section */
+section:nth-of-type(1) {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #f0f0f0;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.banner img
+ {
+  max-width: 200px;
+  height: auto;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+/*scroll*/
+.feed, .medi
+{
+  display: flex;
+  overflow-x: auto;
+  gap: 16px;
+  padding: 10px 0;
+}
+.feed img, .medi img
+{
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 2px solid #f48fb;}
+
+.feed p, .medi p
+{
+  text-align: center;
+  font-weight: bold;
+  color: #880e4f;
+}
+
+
+
+/* About Us */
+body > div {
+  background-color: #eaf4fc;
+  padding: 20px;
+  font-size: 1.1rem;
+
+  line-height: 1.5;
+  text-align: center;
+  color: #2c3e50;
+}
+
+/* Product Sections (Reusable styles) */
+section.power,
+section.super,
+section.BUFFALO,
+section.JOSH {
+  display: flex;
+  padding: 30px;
+  align-items: center;
+  gap: 20px;
+  color: white;
+}
+
+section.power {
+
+  background-color: #2ecc71;
+}
+
+section.super {
+  background-color: #e74c3c;
+}
+
+section.BUFFALO {
+  background-color: #2c3e50;
+}
+
+section.JOSH {
+  background-color: #ff0;
+}
+
+section.power img,
+section.super img,
+section.BUFFALO img,
+section.JOSH img {
+
+  width: 200px;
+  height: auto;
+  border-radius: 10px;
+}
+
+section h2 {
+  margin-bottom: 10px;
+  font-size: 2rem;
+}
+
+section h6 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+ul, ol {
+  margin-left: 20px;
+}
+
+/*product*/
+section.products-wrapper {
+  overflow-x: auto;
+  white-space: nowrap;
+  padding-bottom: 10px;
+}
+section.products {
+  display: flex;
+  gap: 25px;
+  padding: 20px;
+}
+section.products {
+  width: 200px;
+  height: 150px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  text-align: center;
+  line-height: 150px;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+
+/* Team Section */
+section.teem {
+  padding: 40px 20px;
+  background-color: #f5f5f5;
+  text-align: center;
+}
+
+section.teem h1 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #34495e;
+}
+
+section.teem div {
+  display: inline-block;
+  width: 250px;
+  background-color: white;
+  margin: 15px;
+  padding: 20px;
+
+  border-radius: 15px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+section.teem img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+section.teem h3 {
+  font-size: 1.5rem;
+  color: #2c3e50;
+}
+
+section.teem h6 {
+  font-size: 1rem;
+
+  color: #7f8c8d;
+  margin-bottom: 10px;
+}
+
+section.teem a {
+  text-decoration: none;
+  color: white;
+  background-color: #2980b9;
+  padding: 8px 16px;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+/* Footer */
+footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 20px;
+
+  font-size: 0.9rem;
+}
